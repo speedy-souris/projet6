@@ -1,0 +1,407 @@
+﻿--
+-- INSERTION PREPARATION
+--
+
+INSERT INTO preparation (
+    pizza_recipe,id_pizza,id_ingredient
+)
+    VALUES
+(114,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1)
+),
+
+(3,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 1)
+),
+
+(106,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 2)
+),
+
+(27,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 3)
+),
+
+(59,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 4)
+),
+
+(34,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 5)
+),
+
+(58,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 6)
+),
+
+(81,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 7)
+),
+
+(57,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 8)
+),
+
+(84,(SELECT id FROM pizza ORDER BY id LIMIT 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 9)
+),
+
+(143,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 10)
+),
+
+(99,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 11)
+),
+
+(138,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 12)
+),
+
+(94,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 13)
+),
+
+(4,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 14)
+),
+
+(79,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 15)
+),
+
+(103,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 16)
+),
+
+(38,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 17)
+),
+
+(3,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 18)
+),
+
+(78,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 1),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 19)
+),
+
+(32,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 20)
+),
+
+(53,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 21)
+),
+
+(121,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 22)
+),
+
+(113,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 23)
+),
+
+(104,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 24)
+),
+
+(11,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 25)
+),
+
+(55,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 26)
+),
+
+(100,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 27)
+),
+
+(91,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 28)
+),
+
+(144,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 2),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 29)
+),
+
+(139,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 30)
+),
+
+(73,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 31)
+),
+
+(27,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 32)
+),
+
+(84,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 33)
+),
+
+(91,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 34)
+),
+
+(59,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 35)
+),
+
+(79,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 36)
+),
+
+(128,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 37)
+),
+
+(26,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 38)
+),
+
+(18,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 3),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 39)
+),
+
+(51,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 40)
+),
+
+(82,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 41)
+),
+
+(135,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 42)
+),
+
+(78,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 43)
+),
+
+(116,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 44)
+),
+
+(99,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 45)
+),
+
+(4,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 46)
+),
+
+(8,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 47)
+),
+
+(134,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 48)
+),
+
+(25,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 4),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 49)
+),
+
+(114,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 50)
+),
+
+(3,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 51)
+),
+
+(106,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 52)
+),
+
+(27,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 53)
+),
+
+(59,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 54)
+),
+
+(34,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 55)
+),
+
+(58,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 56)
+),
+
+(81,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 57)
+),
+
+(57,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 58)
+),
+
+(84,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 5),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 59)
+),
+
+(143,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 60)
+),
+
+(99,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 61)
+),
+
+(138,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 62)
+),
+
+(94,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 63)
+),
+
+(4,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 64)
+),
+
+(79,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 65)
+),
+
+(103,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 66)
+),
+
+(38,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 67)
+),
+
+(3,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 68)
+),
+
+(78,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 6),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 69)
+),
+
+(32,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 70)
+),
+
+(53,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 71)
+),
+
+(121,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 72)
+),
+
+(113,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 73)
+),
+
+(104,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 74)
+),
+
+(11,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 75)
+),
+
+(55,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 76)
+),
+
+(100,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 77)
+),
+
+(91,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 78)
+),
+
+(144,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 7),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 79)
+),
+
+(139,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 80)
+),
+
+(73,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 81)
+),
+
+(27,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 82)
+),
+
+(84,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 83)
+),
+
+(91,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 84)
+),
+
+(59,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 85)
+),
+
+(79,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 86)
+),
+
+(128,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 87)
+),
+
+(26,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 88)
+),
+
+(18,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 8),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 89)
+),
+
+(51,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 90)
+),
+
+(82,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 91)
+),
+
+(135,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 92)
+),
+
+(78,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 93)
+),
+
+(116,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 94)
+),
+
+(99,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 95)
+),
+
+(4,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 96)
+),
+
+(8,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+   (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 97)
+),
+
+(134,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+     (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 98)
+),
+
+(25,(SELECT id FROM pizza ORDER BY id LIMIT 1 OFFSET 9),
+    (SELECT id FROM ingredient ORDER BY id LIMIT 1 OFFSET 99)
+);
